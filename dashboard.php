@@ -122,7 +122,7 @@ $location_rst=mysqli_query($conn,$sql_select_location);
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>FixIT|Help Desk System</title>
+  <title>Fixit|Help Desk System</title>
   <!-- Bootstrap core CSS-->
   <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
@@ -289,89 +289,7 @@ $location_rst=mysqli_query($conn,$sql_select_location);
 						
 						
 						
-						<div class="col-xl-4 col-sm-6 mb-3"<?php if($userType=="V" OR $userType=="O" ) 
-																{ ?>
-																style="display:block";>  
-														<?php 
-																}			
-															else { ?>	style="display:none";>   
-															<?php 	}    ?>
-						  <div class="card text-white bg-warning o-hidden h-100">
-							<div class="card-body">
-							  <div class="card-body-icon">
-								<i class="fa fa-fw fa-list"></i>
-							  </div>
-							  <div class="mr-5">
-							   <?php
-										//it officer comlete penidng jobs
-										  if($userType=="O"){
-											$rep_id=$_SESSION['report_at'];
-											$sql1 ="SELECT *
-												FROM tbl_jobs a, tbl_users b ,tbl_faults c,tbl_department d ,tbl_location l, tbl_equipments_type e,tbl_job_deatails s,tbl_repair_head r
-												WHERE
-												r.approved_user = b.user_code AND
-												a.dept_code=d.dept_code and
-												a.loc_code=l.loc_code and 
-												a.fault_reqt=c.fault_code and 
-												a.item=e.equipments_type_code and
-												a.job_no=s.job_no and
-												a.job_no=r.job_no and
-												a.it_officer_code='$rep_id'
-												and  job_status='7'";
-
-								
-											$result4= mysqli_query($conn,$sql1);
-											$rowcount=mysqli_num_rows($result4);				
-											echo $rowcount." Pending Complete!";
-											  }
-											  
-											//it Vendor comlete penidng jobs
-									else if($userType=="V"){
-											    $rep_id=$_SESSION['report_at'];
-												$sql1 ="SELECT *
-												FROM tbl_jobs a, tbl_users b ,tbl_faults c,tbl_department d ,tbl_location l, tbl_equipments_type e,tbl_repair_head r,tbl_job_deatails s
-												WHERE
-												r.approved_user = b.user_code AND
-												a.dept_code=d.dept_code and
-												a.loc_code=l.loc_code and 
-												a.fault_reqt=c.fault_code and 
-												a.item=e.equipments_type_code and
-												a.job_no=s.job_no and
-												a.job_no=r.job_no
-												and  job_status='5'
-												and  s.vendor_code='$rep_id'";	
-											
-											$result4= mysqli_query($conn,$sql1);
-											$rowcount=mysqli_num_rows($result4);				
-											echo $rowcount." Pending Complete";
-											  }	
-																				
-							  ?>
-							  
-							  
-							 </div>
-							</div>
-							
-							<?php
-
-							//it Vendor comlete penidng jobs deatails							
-								  if($userType=="O"){  ?>
-								  <a class="card-footer text-white clearfix small z-1" href="itOfficer_pen_com.php" >
-								  <?php 
-								  }
-								  else if($userType=="V"){ 	?>
-									<a class="card-footer text-white clearfix small z-1" href="vendor_pen_com.php" >
-								  <?php 
-								   }
-									
-									?>
-							  <span class="float-left">View Details</span>
-							  <span class="float-right">
-								<i class="fa fa-angle-right"></i>
-							  </span>
-							</a>
-						  </div>
-						</div>
+				
 						
 						<div class="col-xl-4 col-sm-6 mb-3"<?php if($userType=="U") 
 																{ ?>
@@ -661,7 +579,7 @@ $location_rst=mysqli_query($conn,$sql_select_location);
     <footer class="sticky-footer">
       <div class="container">
         <div class="text-center">
-          <small>Copyright &copy; FixIT Solutions | IT Department 2021</small>
+          <small>Copyright &copy; FIXit | IT Department 2021</small>
         </div>
       </div>
     </footer>
@@ -691,12 +609,12 @@ $location_rst=mysqli_query($conn,$sql_select_location);
 //Pie chart
  $connect = mysqli_connect("localhost", "root", "", "db_helpdesk");  
  $query = "SELECT job_status_desc Job_Status ,count(*) Count FROM tbl_jobs J,tbl_job_status S,tbl_users u, tbl_faults f WHERE j.report_at=u.user_code and J.job_status= S.job_status_id and  j.fault_reqt=f.fault_code 
-and j.job_status IN (1,2,3,4,5,6,7,8) GROUP BY job_status_desc;";  
+and j.job_status IN (1,2,8) GROUP BY job_status_desc;";  
  $result = mysqli_query($connect, $query); 
  ?>  
   
   
-        <script type="text/javascript" src="http://localhost:8888/helpdesk/vendor/charts/loader.js"></script>  
+        <script type="text/javascript" src="http://localhost:8088/HelpDeskSliit/vendor/charts/loader.js"></script>  
            <script type="text/javascript">  
            google.charts.load('current', {'packages':['corechart']});  
            google.charts.setOnLoadCallback(drawChart);  
