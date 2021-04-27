@@ -1,9 +1,12 @@
 <?php
+
+//Edited by Shanaka 2021/04/27 :11.11PM
+
 include("dbconfig.php");
 if (isset($_POST['submit']))
 	{	  
 
-// parameter value taken from interface
+
 $username=$_POST['username'];
 $password=$_POST['password'];
 $encrpitedpass= md5($password);
