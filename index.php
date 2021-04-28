@@ -36,7 +36,7 @@ session_start();
                     <label for="password" class="sr-only">Password</label>
                     <input type="password" name="password" id="password" class="form-control" placeholder="***********">
                   </div>
-				<!--===============user login error msg ==============================================================-->                            
+				<!--===============user login error msg ===========================================================-->                            
 					<center>
 						<div style="color: red; ">                   
                             <?php
