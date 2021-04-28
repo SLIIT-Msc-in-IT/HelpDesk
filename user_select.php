@@ -87,7 +87,7 @@ $select_rst=mysqli_query($conn,$sql_select_user);
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>BOI|Help Desk System</title>
+  <title>FiXIT|Help Desk System</title>
   <!-- Bootstrap core CSS-->
   <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
@@ -401,7 +401,7 @@ $select_rst=mysqli_query($conn,$sql_select_user);
 					}
 					else {
 					document.getElementById('ifYes').style.visibility = 'hidden';
-					//document.getElementById("select").disabled = true;
+					document.getElementById("select").disabled = true;
 					}
 
 						}
