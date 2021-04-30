@@ -57,8 +57,10 @@ redhat 6.0 or higher
 # installation Steps
 
 * Install wamp server 3.1.7
+ ![image](https://user-images.githubusercontent.com/79468171/116650519-ec574000-a99e-11eb-93d6-2fd98fe1cac2.png)
+ 
 * check weather the wamp server runing all service and apache ,mysql,php version
-   ![image](https://user-images.githubusercontent.com/79468171/116650519-ec574000-a99e-11eb-93d6-2fd98fe1cac2.png)
+  
 
 * copy the folder hepdesksliit folder in to wamp64\www path
 * change the the mysql username,password and the servername in to the dbconfig.php file 
