@@ -63,10 +63,9 @@ redhat 6.0 or higher
   ![image](https://user-images.githubusercontent.com/79468171/116651276-7a7ff600-a9a0-11eb-83aa-5882fea46974.png)
 
 
-  
-
 * Install wamp server 3.1.7
 
+  ![image](https://user-images.githubusercontent.com/79468171/116652165-49a0c080-a9a2-11eb-886d-b83a39f1c8a4.png)
 
  
 * check weather the wamp server runing all service and apache ,mysql,php version
