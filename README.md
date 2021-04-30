@@ -85,6 +85,9 @@ redhat 6.0 or higher
   ![image](https://user-images.githubusercontent.com/79468171/116651925-da2ad100-a9a1-11eb-92fa-88a84fdafba9.png)
 
 * create database as helpdesk and import backup file in DB folder.
+
+  ![image](https://user-images.githubusercontent.com/79468171/116652056-08a8ac00-a9a2-11eb-9ea7-2a46a2627e3e.png)
+
 * Then browse the system using the url http://localhost/HelpDeskSliit
 
 
