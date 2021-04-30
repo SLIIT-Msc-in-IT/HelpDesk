@@ -58,9 +58,9 @@ redhat 6.0 or higher
 
 * install dependancy software first
 
-Microsoft Visual C++ Redistributable For Windows vcredist_2008_sp1_x64 vcredist_2008_mfc_x64 vcredist_2012_upd64_x64 vcredist_2013_upd64_x64 vcredist_2019_x64
+  Microsoft Visual C++ Redistributable For Windows vcredist_2008_sp1_x64 vcredist_2008_mfc_x64 vcredist_2012_upd64_x64 vcredist_2013_upd64_x64 vcredist_2019_x64
 
-![image](https://user-images.githubusercontent.com/79468171/116651276-7a7ff600-a9a0-11eb-83aa-5882fea46974.png)
+  ![image](https://user-images.githubusercontent.com/79468171/116651276-7a7ff600-a9a0-11eb-83aa-5882fea46974.png)
 
 
   
