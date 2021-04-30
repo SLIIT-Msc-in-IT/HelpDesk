@@ -53,3 +53,14 @@ vcredist_2019_x64
 Windows 7 or higher ,windows 2008 server,windows 2012 server,windows 2016 server or windows 2019 server
 ubuntu 18.0 or higher
 redhat 6.0 or higher
+
+# installation Steps
+
+install wamp server 3.1.7
+check weather the wamp server runing all service and apache ,mysql,php version
+copy the folder hepdesksliit folder in to wamp64\www path
+change the the mysql username,password and the servername in to the dbconfig.php file 
+create database as helpdesk and import backup file in DB folder.
+Then browse the system using the url http://localhost/HelpDeskSliit
+
+
