@@ -77,6 +77,9 @@ redhat 6.0 or higher
 
 
 * copy the folder hepdesksliit folder in to wamp64\www path
+
+  ![image](https://user-images.githubusercontent.com/79468171/116651734-7b655780-a9a1-11eb-8702-d83263c89596.png)
+
 * change the the mysql username,password and the servername in to the dbconfig.php file 
 * create database as helpdesk and import backup file in DB folder.
 * Then browse the system using the url http://localhost/HelpDeskSliit
