@@ -61,7 +61,6 @@ redhat 6.0 or higher
 
  
 * check weather the wamp server runing all service and apache ,mysql,php version
-  
    ![image](https://user-images.githubusercontent.com/79468171/116650519-ec574000-a99e-11eb-93d6-2fd98fe1cac2.png)
 
 * copy the folder hepdesksliit folder in to wamp64\www path
