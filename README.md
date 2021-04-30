@@ -54,7 +54,7 @@ Windows 7 or higher ,windows 2008 server,windows 2012 server,windows 2016 server
 ubuntu 18.0 or higher
 redhat 6.0 or higher
 
-# installation Steps
+# Installation Steps
 
 * install dependancy software first
 
