@@ -86,6 +86,11 @@ redhat 6.0 or higher
 * create database as helpdesk and import backup file in DB folder.
 
   ![image](https://user-images.githubusercontent.com/79468171/116652056-08a8ac00-a9a2-11eb-9ea7-2a46a2627e3e.png)
+  
+* It is required to enable socket and openssl service in wamp server for send email
+  
+  ![image](https://user-images.githubusercontent.com/79468171/117011032-0c726080-ad0b-11eb-80dc-aa0e6e58ff71.png)
+
 
 * Then browse the system using the url http://localhost/HelpDeskSliit
 
